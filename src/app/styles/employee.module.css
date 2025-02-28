@@ -1,0 +1,124 @@
+/* Main Container */
+.container {
+    padding: 40px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #f4f4f4;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  /* Employee List */
+  .employeeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+  }
+  
+  /* Employee Card */
+  .employeeCard {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    width: 270px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* 3D Effect on Hover */
+  .employeeCard:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Employee Image */
+  .employeeImage {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #e67e22;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .employeeCard:hover .employeeImage {
+    transform: scale(1.1);
+  }
+  
+  /* Employee Name */
+  .employeeName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  /* Employee Position */
+  .employeePosition {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #f1c40f;
+    margin-bottom: 15px;
+  }
+  
+  /* View Profile Button */
+  .viewProfileBtn {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 87, 34, 0.3);
+    text-transform: uppercase;
+  }
+  
+  .viewProfileBtn:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 87, 34, 0.5);
+  }
+  
+  /* Glowing Effect on Hover */
+  @keyframes glowEffect {
+    0% { box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); }
+    50% { box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); }
+    100% { box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); }
+  }
+  
+  .employeeCard:hover {
+    animation: glowEffect 1s infinite alternate;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .employeeCard {
+      width: 90%;
+    }
+  }
+  

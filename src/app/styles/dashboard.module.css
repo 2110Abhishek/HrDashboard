@@ -1,0 +1,573 @@
+/* General Container */
+.container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3a3a3d; /* Light Grey Background */
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #af9d9d;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+  }
+  
+  .profileImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+  }
+  
+  .profileName {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .profileRole {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .menu li:hover,
+  .active {
+    background: #f0f0f0;
+    border-radius: 5px;
+    color: #007bff;
+  }
+  
+
+/* Main Content */
+.mainContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 250px);
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Search Bar */
+.searchBar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 15px;
+    width: 280px;
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar:hover {
+    border-color: #2563eb !important;
+    background: white !important;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.profile:hover {
+    background: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Profile Image */
+.profile img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #2563eb;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+}
+
+.dashboardCards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border-radius: 12px;
+    padding: 20px;
+    width: 2000px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .iconContainer {
+    font-size: 30px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .value {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .highlight {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  
+
+/* Job Stats */
+.jobStats {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.jobStats .card {
+    background: #b9c9a7;
+    color: #333;
+}
+
+/* Sections Wrapper */
+.sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    /* background: #edf2f7; Same as .jobStats .card */
+    color: #333;
+    padding: 20px;
+    border-radius: 15px; /* Optional: Makes it look smooth */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optional: Soft shadow */
+}
+
+
+/* ============ ANNOUNCEMENT SECTION ============ */
+.announcement {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Animated Glowing Border on Hover */
+.announcement:hover {
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+/* Announcement Title */
+.announcement h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* Announcement Items */
+.announcementItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+}
+
+/* Announcement Item Hover Effect */
+.announcementItem:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(5px);
+}
+
+/* Icons and Text Alignment */
+.announcementItem p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Announcement Icons */
+.announcementItem p::before {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Timestamp Styling */
+.announcementItem span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Fade-in Slide-up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ======= RECENT ACTIVITY ======= */
+.recentActivity {
+    background: linear-gradient(135deg, #4a90e2, #0072ff);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Title */
+.recentTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+}
+
+/* Activity List */
+.activityList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Activity Item */
+.activityItem {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+}
+
+.activityItem:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(5px);
+}
+
+/* Icon */
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Timestamp */
+.timestamp {
+    font-size: 12px;
+    opacity: 0.8;
+    display: block;
+    margin-top: 3px;
+}
+
+/* Button */
+.activityBtn {
+    width: 100%;
+    background: white;
+    color: #0072ff;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.activityBtn:hover {
+    background: #ffffff;
+    color: #0057b8;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ============ UPCOMING SCHEDULE ============ */
+.schedule {
+    background: rgba(255, 255, 255, 0.15); /* Glassmorphic effect */
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Add a glowing border effect */
+.schedule::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff6b6b, #556270);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* Schedule Title */
+.schedule h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 5px;
+}
+
+/* Schedule Items */
+.schedule p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #e3e3e3;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 8px 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover effect for schedule items */
+.schedule p:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+/* Unique Schedule Button */
+.scheduleBtn {
+    margin-top: 15px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #ff6b6b, #ffa07a);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button hover effect */
+.scheduleBtn:hover {
+    background: linear-gradient(135deg, #ff4747, #ff9f68);
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(255, 107, 107, 0.5);
+}
+
+/* Button Animation */
+.scheduleBtn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.scheduleBtn:active::after {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive for Tablets */
+@media (max-width: 900px) {
+    .dashboardCards {
+        flex-direction: column;
+    }
+    
+    .sections {
+        grid-template-columns: 1fr;
+    }
+
+    .jobStats {
+        flex-direction: column;
+    }
+
+    .searchBar {
+        width: 180px;
+    }
+
+    .profile img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .mainContent {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+
+    .sections {
+        grid-template-columns: 1fr;
+    }
+
+    .profile img {
+        width: 25px;
+        height: 25px;
+    }
+}

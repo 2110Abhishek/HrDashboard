@@ -1,0 +1,66 @@
+.createScheduleContainer {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #c7a8a8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .backButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .backButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .pageTitle {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .scheduleForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scheduleForm label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .scheduleForm input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submitBtn {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #218838;
+  }
+  
